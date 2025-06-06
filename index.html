@@ -12,15 +12,23 @@
   <body>
   <div id="app">
     <h3> Even's Calendar Game</h3>
+    
     <h6>Select a month and a year </h6>
     <div class="container-fluid p-4">      
-        <form class="row mx-5 px-5" id="datePicker"></form>      
+        <form class="row mx-5 px-1" id="datePicker"></form>      
     </div>
     <div id="myCal"></div>
-    <div class="quiz">
+    <button id="start" class="btn btn-secondary text-white" onclick="startPlaying()">Start&nbsp; 
+      <i class='fa-solid fa-chevron-circle-down'></i></button>
+    <div id="quiz"><!--use getelement(quiz).?hidden ou dsiplay=none-->
       <div class = "white">
-      <p >This game is simple: select the correct date to get a secret code. Then enter the code to unlock a photo.<br>
-        Question 1: When was the first studio album of Linkin Park released in the U.S.?
+        <div class="flex-container">
+          <i class="fa-solid fa-book-open-reader"></i><span>‌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <p>This game is simple: select the correct date to get a secret code. Then enter the code to unlock a photo.</p>
+
+        </div>
+
+        <p>Question 1: When was the first studio album of Linkin Park released in the U.S.?
       <br>Question 2: When did Chester and Talinda get married?
       <br>Question 3: When did Deftones' bassist get a fatal automobile accident? </p>
       </div>
@@ -45,6 +53,7 @@
       <div class="flex-col">
         <img id="lp2000" src="/assets/Linkin-Park-2000.jpg" alt="Network issue"></img>
         <img id="talinda" src="/assets/chester-talinda.jpg" alt="Network issue"></img>
+        <img id="yi" src="/assets/yi.jpg" alt="Network issue"></img>
       </div>
     </div>
   </div>
@@ -52,6 +61,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script type="module" src="/src/main.js"></script>
   <script>
+
+    function startPlaying(){
+      let quiz = document.getElementById('quiz');
+      quiz.style.display = 'block';
+      let starter = document.getElementById('start');
+      starter.style.display = 'none';
+    }
+
   function myClick() {
     let numero = document.querySelector('#passcode').value; 
     //document.getElementById(passcode).value;
@@ -66,11 +83,13 @@
       pic.style.display = 'block';
     }
     else if (numero == 3674555){  
-        document.getElementById("message").innerHTML = "Correct! <br> A photo will be added soon."
+        document.getElementById("message").innerHTML = "Correct!"
+        let pic = document.getElementById('yi');
+      pic.style.display = 'block';
     }
     else{
     //document.getElementById("message").innerHTML = numero;
-    document.getElementById("message").innerHTML = "pathetic."
+    document.getElementById("message").innerHTML = "pathetic... <i class='fa-solid fa-frog'></i>"
     }
   }
   </script>

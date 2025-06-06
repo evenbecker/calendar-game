@@ -1,28 +1,20 @@
-function openModal() {
-alert('function Hybrid Theory');  
-}
-
-export function caller() {
-  openModal();  
-  }
-
 export function buildDateForm() {
     let months = ["January", "February", "March", "April", "May",  "June", "July", "August", "September", " October", "November", "December"];    
     $('#datePicker').append('<div class= "col-2"></div>');
-    $('#datePicker').append('<div class= "col-4"><select class="form-select" aria-label="Default select example" id="month"></select></div>');
+    $('#datePicker').append('<div class= "col-3"><select class="form-select" aria-label="Default select example" id="month"></select></div>');
   
     for(let i = 0; i < months.length;i++) {
        $('#month').append('<option value="'+i+'">'+months[i]+'</option')
     }
 
-    $('#datePicker').append('<div class= "col-4"><select class="form-select" aria-label="Default select example" id="year"></select></div>');
+    $('#datePicker').append('<div class= "col-3"><select class="form-select" aria-label="Default select example" id="year"></select></div>');
 
     for(let i = 1990; i < 2027; i++) {
        $('#year').append('<option value="'+i+'">'+i+'</option>')
     }
 
-    $('#datePicker').append('<div class= "col-2"><button class="btn btn-secondary text-white" id="submit">Go!</button></div>');
-
+    $('#datePicker').append('<div class= "col-2"><button class="btn btn-secondary text-white" id="submit">Go <i class="fa-solid fa-circle-arrow-right">‌</i></button></div>');
+    $('#datePicker').append('<div class= "col-2"></div>');
     // set date to current month and year
     let d = new Date();
     let n = d.getMonth();

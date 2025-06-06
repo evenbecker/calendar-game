@@ -21,19 +21,23 @@ a {
 a:hover {
   color: #535bf2;
 }
-.quiz{
+td:hover{
+  background-color: hsl(0, 0%, 88%);
+}
+#quiz{
   text-align: left;
   width: 65%;
   min-width: 700px; 
-  margin-top: 20px;
-  
+  margin-top: 20px;  
   margin: auto;
+  display: none;
 }
 .white{
-  padding: 1em;
+  padding: 1rem 2rem;
   background-color: white;
   border-radius: 14px;
   border: 2px solid hsl(176, 26%, 42%);
+  margin-top: 7rem;
 }
 #cartoon{
   width: 40%;  
@@ -59,6 +63,11 @@ div.spacer{
   height: auto;
   display: none;
 }
+#yi{
+  width: 100%; 
+  height: auto;
+  display: none;
+}
 #message{
   margin-top: 30px;
   padding-left: 30px;
@@ -68,11 +77,12 @@ div.spacer{
   display: flex;
   flex-direction: row;
   margin-top : 20px;
-  margin-bottom : 20px;
+  margin-bottom : 4px;
 }
 .flex-col {
   display: flex;
   flex-direction: column;
+  place-items: center;
   /*margin-top : 20px;*/
 }
 h5{
@@ -109,6 +119,7 @@ background: white;
 }
 h3{
   color:hsl(176, 26%, 52%);
+  padding: 1rem 0;
   /* hsl(235, 100%, 64%);*/
 }
 
