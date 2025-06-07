@@ -36,8 +36,12 @@ td:hover{
   padding: 1rem 2rem;
   background-color: white;
   border-radius: 14px;
-  border: 2px solid hsl(176, 26%, 42%);
+  border: 2px solid hsl(213, 74%, 62%);
   margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.filler-flex{
+  width:10%;
 }
 #cartoon{
   width: 40%;  
@@ -107,7 +111,7 @@ th {
 border: 1px solid black;
 padding: 6px;
 font-weight: bold;
-background:hsl(176, 26%, 83%);
+background:hsl(213, 74%, 95%);
 /* hsl(240, 100%, 94%);*/
 }
 td {
@@ -118,7 +122,7 @@ width: 100px;
 background: white;
 }
 h3{
-  color:hsl(176, 26%, 52%);
+  color:hsl(213, 74%, 60%);
   padding: 1rem 0;
   /* hsl(235, 100%, 64%);*/
 }
@@ -130,7 +134,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: hsl(176, 26%, 96%);
+  background-color: hsl(213, 74%, 97%);
   /*#FAFAFF;*/
 }
 

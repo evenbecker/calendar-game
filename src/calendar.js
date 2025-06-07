@@ -13,7 +13,7 @@ export function buildDateForm() {
        $('#year').append('<option value="'+i+'">'+i+'</option>')
     }
 
-    $('#datePicker').append('<div class= "col-2"><button class="btn btn-secondary text-white" id="submit">Go <i class="fa-solid fa-circle-arrow-right">‌</i></button></div>');
+    $('#datePicker').append('<div class= "col-2"><button class="btn btn-primary text-white" id="submit">Go <i class="fa-solid fa-circle-arrow-right">‌</i></button></div>');
     $('#datePicker').append('<div class= "col-2"></div>');
     // set date to current month and year
     let d = new Date();

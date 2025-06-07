@@ -18,7 +18,7 @@
         <form class="row mx-5 px-1" id="datePicker"></form>      
     </div>
     <div id="myCal"></div>
-    <button id="start" class="btn btn-secondary text-white" onclick="startPlaying()">Start&nbsp; 
+    <button id="start" class="btn btn-primary text-white" onclick="startPlaying()">Start&nbsp; 
       <i class='fa-solid fa-chevron-circle-down'></i></button>
     <div id="quiz"><!--use getelement(quiz).?hidden ou dsiplay=none-->
       <div class = "white">
@@ -33,6 +33,7 @@
       <br>Question 3: When did Deftones' bassist get a fatal automobile accident? </p>
       </div>
       <div class="flex-container">
+        <div class="filler-flex"></div>
         <div id="cartoon"> 
           <img id="trinity" src="/assets/Trinity-art.jpeg" alt="enter a code"></img>
           <h5>Follow the white rabbit</h5>
@@ -44,11 +45,12 @@
               <label for="passcode" class="form-label">Gimmie a passcode:</label>
               <input id="passcode" type="text" class="form-control" />  
              <div class="spacer"></div>
-              <button class="btn btn-secondary text-white" onclick="myClick()">submit</button>  
+              <button class="btn btn-primary text-white" onclick="myClick()">submit</button>  
               
               <p id="message"></p>
           </div> 
         </div>
+        <div class="filler-flex"></div>
       </div>
       <div class="flex-col">
         <img id="lp2000" src="/assets/Linkin-Park-2000.jpg" alt="Network issue"></img>
